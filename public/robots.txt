@@ -1,0 +1,11 @@
+# Ahmed Zamzam Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ahmedzamzam55.github.io/profile/sitemap.xml
+
+# Block sensitive paths
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.env
