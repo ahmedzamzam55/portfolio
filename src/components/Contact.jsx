@@ -118,7 +118,7 @@ export default function Contact() {
               <div>
                 <h4>GitHub</h4>
                 <a
-                  href="https://github.com/ahmedzamzam55"
+                  href="https://github.com/ahmedzamzam55?tab=repositories"
                   target="_blank"
                   rel="noopener noreferrer"
                   referrerPolicy="no-referrer"
