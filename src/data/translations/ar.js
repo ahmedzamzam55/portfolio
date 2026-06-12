@@ -92,7 +92,8 @@ export const ar = {
     plans: [
       {
         badge: 'أساسية',
-        amount: '2,000',
+        amount: 'حسب المتطلبات',
+        customPrice: true,
         features: [
           'صفحة هبوط / حتى 5 صفحات',
           'تصميم متجاوب',
@@ -104,7 +105,8 @@ export const ar = {
       },
       {
         badge: 'احترافية',
-        amount: '5,000',
+        amount: 'حسب الاتفاق',
+        customPrice: true,
         features: [
           'موقع مخصص حتى 15 صفحة',
           'لوحة تحكم',
@@ -117,8 +119,8 @@ export const ar = {
       },
       {
         badge: 'مؤسسية',
-        amount: '8,500',
-        plus: true,
+        amount: 'حسب الطلب',
+        customPrice: true,
         features: [
           'تطبيق ويب متكامل',
           'نظام CRM/ERP مخصص',

@@ -92,7 +92,8 @@ export const en = {
     plans: [
       {
         badge: 'Basic',
-        amount: '2,000',
+        amount: 'Based on Specs',
+        customPrice: true,
         features: [
           'Landing Page / Up to 5 Pages',
           'Responsive Design',
@@ -104,7 +105,8 @@ export const en = {
       },
       {
         badge: 'Professional',
-        amount: '5,000',
+        amount: 'Upon Agreement',
+        customPrice: true,
         features: [
           'Custom Website up to 15 Pages',
           'Admin Dashboard',
@@ -117,8 +119,8 @@ export const en = {
       },
       {
         badge: 'Enterprise',
-        amount: '8,500',
-        plus: true,
+        amount: 'On Demand',
+        customPrice: true,
         features: [
           'Full Stack Web Application',
           'Custom CRM/ERP System',

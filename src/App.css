@@ -140,6 +140,7 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 .price-amount { margin-bottom:4px; }
 .currency { font-size:16px; color:var(--text3); vertical-align:super; }
 .amount { font-family:var(--font-heading); font-size:48px; font-weight:800; color:var(--text); }
+.amount.custom-text { font-size:26px; font-weight:700; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; display:inline-block; }
 .plus { font-size:24px; color:var(--accent); }
 .price-desc { color:var(--text3); font-size:14px; margin-bottom:24px; }
 .price-features { text-align:left; margin-bottom:32px; }

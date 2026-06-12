@@ -14,11 +14,17 @@ export default function Pricing() {
               {i === 1 && <div className="popular-tag">{t.pricing.popular}</div>}
               <div className="price-badge">{plan.badge}</div>
               <div className="price-amount">
-                <span className="currency">SAR</span>
-                <span className="amount">{plan.amount}</span>
-                {plan.plus && <span className="plus">+</span>}
+                {plan.customPrice ? (
+                  <span className="amount custom-text">{plan.amount}</span>
+                ) : (
+                  <>
+                    <span className="currency">SAR</span>
+                    <span className="amount">{plan.amount}</span>
+                    {plan.plus && <span className="plus">+</span>}
+                  </>
+                )}
               </div>
-              <p className="price-desc">{t.pricing.startFrom}</p>
+              <p className="price-desc" style={plan.customPrice ? { opacity: 0 } : {}}>{t.pricing.startFrom}</p>
               <ul className="price-features">
                 {plan.features.map((f, j) => (
                   <li key={j}><i className={`fas ${j === plan.features.length - 1 ? 'fa-clock' : 'fa-check'}`}></i> {f}</li>
