@@ -81,7 +81,7 @@ export const ar = {
       name: 'نظام متابعة أعمال الموقع الهندسية',
       desc: 'نظام متقدم لمتابعة وتتبع عمليات المواقع الهندسية وتقارير التقدم وإدارة سير العمل.',
       tags: ['Laravel', 'Inertia.js', 'React.js'],
-      video: '/assets/projects/site-monitoring.mp4',
+      video: 'https://drive.google.com/file/d/1iw9hOWd45ZxBMvERn58U8J0Z-1pbJbfS/preview',
       img: '/assets/projects/site-monitoring-thumb.png',
       cat: 'webapp',
     },

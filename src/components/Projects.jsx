@@ -102,13 +102,25 @@ export default function Projects() {
                 <i className="fas fa-play-circle"></i> {activeVideo.name}
               </span>
             </div>
-            <video
-              src={activeVideo.video}
-              controls
-              autoPlay
-              playsInline
-              className="video-modal-player"
-            />
+            {activeVideo.video.includes('drive.google.com') ? (
+              <iframe
+                src={activeVideo.video}
+                width="100%"
+                height="500"
+                allow="autoplay"
+                className="video-modal-player"
+                style={{ border: 'none' }}
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <video
+                src={activeVideo.video}
+                controls
+                autoPlay
+                playsInline
+                className="video-modal-player"
+              />
+            )}
           </div>
         </div>
       )}

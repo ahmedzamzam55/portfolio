@@ -81,7 +81,7 @@ export const en = {
       name: 'Engineering Site Monitoring System',
       desc: 'Advanced system for monitoring and tracking engineering site operations, progress reporting, and workflow management.',
       tags: ['Laravel', 'Inertia.js', 'React.js'],
-      video: '/assets/projects/site-monitoring.mp4',
+      video: 'https://drive.google.com/file/d/1iw9hOWd45ZxBMvERn58U8J0Z-1pbJbfS/preview',
       img: '/assets/projects/site-monitoring-thumb.png',
       cat: 'webapp',
     },
