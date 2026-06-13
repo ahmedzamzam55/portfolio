@@ -97,7 +97,7 @@ export const ar = {
       name: 'متابعة الشركات ونسب الإنجاز',
       desc: 'نظام مؤسسي لتتبع عمليات الشركات ونسب الإنجاز مع مراقبة التقدم في الوقت الفعلي ولوحات التقارير.',
       tags: ['Laravel', 'React.js', 'MySQL'],
-      video: '/assets/projects/company-tracking.mp4',
+      video: 'https://drive.google.com/file/d/1qY11KpLas4AebrGaw15tE5XXPqgm6U36/preview',
       img: '/assets/projects/company-tracking-thumb.png',
       cat: 'webapp',
     },
