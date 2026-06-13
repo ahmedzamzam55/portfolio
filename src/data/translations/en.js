@@ -45,6 +45,8 @@ export const en = {
   projects: {
     title: 'My Projects',
     liveDemo: 'Live Demo',
+    watchVideo: 'Watch Video',
+    closeVideo: 'Close',
     all: 'All',
     website: 'Website',
     webapp: 'Web App',
@@ -60,6 +62,14 @@ export const en = {
       cat: 'website',
     },
     {
+      name: 'Academic Platform',
+      desc: 'Comprehensive academic management platform for educational institutions with student tracking, course management, and performance analytics.',
+      tags: ['Laravel', 'React.js', 'MySQL'],
+      video: '/assets/projects/academic-platform.mp4',
+      img: '/assets/projects/academic-platform-thumb.png',
+      cat: 'webapp',
+    },
+    {
       name: 'ENgaz CRM',
       desc: 'Full-featured CRM system for construction operations including project tracking, client management, and reporting dashboard.',
       tags: ['React.js', 'Laravel', 'MySQL'],
@@ -68,11 +78,27 @@ export const en = {
       cat: 'webapp',
     },
     {
+      name: 'Engineering Site Monitoring System',
+      desc: 'Advanced system for monitoring and tracking engineering site operations, progress reporting, and workflow management.',
+      tags: ['Laravel', 'Inertia.js', 'React.js'],
+      video: '/assets/projects/site-monitoring.mp4',
+      img: '/assets/projects/site-monitoring-thumb.png',
+      cat: 'webapp',
+    },
+    {
       name: 'Aknan Scope',
       desc: 'Enterprise project management system with company management, document handling, expense tracking, user roles, and multi-language support.',
       tags: ['Laravel', 'Inertia.js', 'React.js'],
       url: 'https://aknanllc-scope.com/login',
       img: '/assets/projects/aknan-scope.png',
+      cat: 'webapp',
+    },
+    {
+      name: 'Company & Progress Tracking',
+      desc: 'Enterprise system for tracking company operations and completion percentages with real-time progress monitoring and reporting dashboards.',
+      tags: ['Laravel', 'React.js', 'MySQL'],
+      video: '/assets/projects/company-tracking.mp4',
+      img: '/assets/projects/company-tracking-thumb.png',
       cat: 'webapp',
     },
     {

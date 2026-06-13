@@ -45,6 +45,8 @@ export const ar = {
   projects: {
     title: 'مشاريعي',
     liveDemo: 'معاينة',
+    watchVideo: 'مشاهدة الفيديو',
+    closeVideo: 'إغلاق',
     all: 'الكل',
     website: 'موقع',
     webapp: 'تطبيق ويب',
@@ -60,6 +62,14 @@ export const ar = {
       cat: 'website',
     },
     {
+      name: 'المنصة الأكاديمية',
+      desc: 'منصة أكاديمية شاملة لإدارة المؤسسات التعليمية مع تتبع الطلاب وإدارة المقررات وتحليلات الأداء.',
+      tags: ['Laravel', 'React.js', 'MySQL'],
+      video: '/assets/projects/academic-platform.mp4',
+      img: '/assets/projects/academic-platform-thumb.png',
+      cat: 'webapp',
+    },
+    {
       name: 'نظام ENgaz',
       desc: 'نظام CRM متكامل لعمليات البناء يشمل تتبع المشاريع وإدارة العملاء ولوحة التقارير.',
       tags: ['React.js', 'Laravel', 'MySQL'],
@@ -68,11 +78,27 @@ export const ar = {
       cat: 'webapp',
     },
     {
+      name: 'نظام متابعة أعمال الموقع الهندسية',
+      desc: 'نظام متقدم لمتابعة وتتبع عمليات المواقع الهندسية وتقارير التقدم وإدارة سير العمل.',
+      tags: ['Laravel', 'Inertia.js', 'React.js'],
+      video: '/assets/projects/site-monitoring.mp4',
+      img: '/assets/projects/site-monitoring-thumb.png',
+      cat: 'webapp',
+    },
+    {
       name: 'أكنان سكوب',
       desc: 'نظام إدارة مشاريع مؤسسي مع إدارة الشركات والمستندات وتتبع المصروفات والصلاحيات.',
       tags: ['Laravel', 'Inertia.js', 'React.js'],
       url: 'https://aknanllc-scope.com/login',
       img: '/assets/projects/aknan-scope.png',
+      cat: 'webapp',
+    },
+    {
+      name: 'متابعة الشركات ونسب الإنجاز',
+      desc: 'نظام مؤسسي لتتبع عمليات الشركات ونسب الإنجاز مع مراقبة التقدم في الوقت الفعلي ولوحات التقارير.',
+      tags: ['Laravel', 'React.js', 'MySQL'],
+      video: '/assets/projects/company-tracking.mp4',
+      img: '/assets/projects/company-tracking-thumb.png',
       cat: 'webapp',
     },
     {
