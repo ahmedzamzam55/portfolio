@@ -65,7 +65,7 @@ export const ar = {
       name: 'المنصة الأكاديمية',
       desc: 'منصة أكاديمية شاملة لإدارة المؤسسات التعليمية مع تتبع الطلاب وإدارة المقررات وتحليلات الأداء.',
       tags: ['Laravel', 'React.js', 'MySQL'],
-      video: '/assets/projects/academic-platform.mp4',
+      video: 'https://drive.google.com/file/d/1pwOXSe4P-14pRlxQIaPox9mDRz5LASX1/preview',
       img: '/assets/projects/academic-platform-thumb.png',
       cat: 'webapp',
     },

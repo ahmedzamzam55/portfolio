@@ -65,7 +65,7 @@ export const en = {
       name: 'Academic Platform',
       desc: 'Comprehensive academic management platform for educational institutions with student tracking, course management, and performance analytics.',
       tags: ['Laravel', 'React.js', 'MySQL'],
-      video: '/assets/projects/academic-platform.mp4',
+      video: 'https://drive.google.com/file/d/1pwOXSe4P-14pRlxQIaPox9mDRz5LASX1/preview',
       img: '/assets/projects/academic-platform-thumb.png',
       cat: 'webapp',
     },
