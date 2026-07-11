@@ -32,17 +32,20 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 
 /* ===== LOADER ===== */
 .loader { position:fixed; inset:0; z-index:9999; background:var(--bg-primary); display:flex; align-items:center; justify-content:center; }
-.loader-content { text-align:center; }
-.loader-logo { font-family:var(--font-heading); font-size:64px; font-weight:800; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:24px; }
+.loader-content { text-align:center; display:flex; flex-direction:column; align-items:center; }
+.loader-logo-img { height:70px; width:auto; margin-bottom:24px; animation:loaderPulse 2.0s infinite ease-in-out; }
 .loader-bar { width:200px; height:4px; background:var(--border); border-radius:2px; overflow:hidden; }
 .loader-progress { height:100%; background:var(--gradient); border-radius:2px; animation:load 1.5s ease-in-out; }
 @keyframes load { 0%{width:0} 100%{width:100%} }
+@keyframes loaderPulse { 0%,100%{transform:scale(1);opacity:0.8} 50%{transform:scale(1.08);opacity:1} }
 
 /* ===== NAVBAR ===== */
 .navbar { position:fixed; top:0; left:0; right:0; z-index:1000; background:var(--glass); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-bottom:1px solid var(--glass-border); transition:all .3s; height:var(--nav-height); }
 .navbar.scrolled { background:var(--bg-primary); box-shadow:var(--shadow); }
 .nav-container { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; height:100%; }
-.nav-logo { font-family:var(--font-heading); font-size:28px; font-weight:800; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.nav-logo { display:flex; align-items:center; }
+.nav-logo-img { height:36px; width:auto; display:block; transition:transform 0.3s ease; }
+.nav-logo-img:hover { transform:scale(1.08); }
 .nav-links { display:flex; gap:32px; }
 .nav-links a { color:var(--text2); font-size:14px; font-weight:500; transition:color .3s; position:relative; }
 .nav-links a::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:var(--gradient); transition:width .3s; }

@@ -29,6 +29,15 @@ export function useTheme() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
+    
+    // Update favicon dynamically based on theme
+    const favicon = document.querySelector('link[rel="icon"]');
+    const appleIcon = document.querySelector('link[rel="apple-touch-icon"]');
+    const logoPath = theme === 'dark' ? '/logo_dark.png' : '/logo_light.png';
+    
+    if (favicon) favicon.setAttribute('href', logoPath);
+    if (appleIcon) appleIcon.setAttribute('href', logoPath);
+
     try {
       localStorage.setItem('theme', theme);
     } catch {

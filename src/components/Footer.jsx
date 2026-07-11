@@ -1,12 +1,21 @@
 import { useApp } from '../hooks/useApp';
 
 export default function Footer() {
-  const { t } = useApp();
+  const { t, theme } = useApp();
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-brand"><a href="#hero" className="nav-logo">AZ</a><p>{t.footer.role}</p></div>
+          <div className="footer-brand">
+            <a href="#hero" className="nav-logo">
+              <img 
+                src={theme === 'dark' ? '/logo_dark.png' : '/logo_light.png'} 
+                alt="Ahmed Zamzam Logo" 
+                className="nav-logo-img" 
+              />
+            </a>
+            <p>{t.footer.role}</p>
+          </div>
           <div className="footer-links">
             <a href="#about">{t.nav.about}</a>
             <a href="#projects">{t.nav.projects}</a>

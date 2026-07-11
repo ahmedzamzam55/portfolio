@@ -35,7 +35,13 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-container">
-        <a href="#hero" className="nav-logo" onClick={(e) => handleScroll(e, '#hero')}>AZ</a>
+        <a href="#hero" className="nav-logo" onClick={(e) => handleScroll(e, '#hero')}>
+          <img 
+            src={theme === 'dark' ? '/logo_dark.png' : '/logo_light.png'} 
+            alt="Ahmed Zamzam Logo" 
+            className="nav-logo-img" 
+          />
+        </a>
         <ul className={`nav-links${menuOpen ? ' active' : ''}`}>
           {links.map(l => (
             <li key={l.href}><a href={l.href} onClick={(e) => handleScroll(e, l.href)}>{l.label}</a></li>
