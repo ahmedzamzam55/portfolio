@@ -51,62 +51,100 @@ export const ar = {
     website: 'موقع',
     webapp: 'تطبيق ويب',
     saas: 'SaaS',
+    problem: 'المشكلة',
+    solution: 'الحل',
+    result: 'النتيجة',
   },
   projectList: [
     {
       name: 'شركة أكنان',
-      desc: 'موقع شركة احترافي لشركة مقاولات وصناعة رائدة في السعودية مع دعم ثنائي اللغة وتصميم حديث.',
+      desc: 'موقع شركة احترافي لشركة مقاولات وصناعة رائدة في السعودية مع دعم ثنائي اللغة.',
+      caseStudy: {
+        problem: 'عدم وجود هوية رقمية احترافية ثنائية اللغة تمثل الشركة وخدماتها على الويب.',
+        solution: 'تطوير واجهة ويب تفاعلية سريعة ومستجيبة باستخدام React مع تحسين سرعة التحميل والـ SEO.',
+        result: 'بناء حضور رقمي قوي متكامل، وتحسين ظهور الشركة في محركات البحث وزيادة التفاعل مع العملاء.'
+      },
       tags: ['React.js', 'Vite', 'CSS3'],
       url: 'https://www.aknanllc.com/',
-      img: '/assets/projects/aknan-llc.png',
+      img: '/assets/projects/aknan-llc.webp',
       cat: 'website',
     },
     {
       name: 'المنصة الأكاديمية',
-      desc: 'منصة أكاديمية شاملة لإدارة المؤسسات التعليمية مع تتبع الطلاب وإدارة المقررات وتحليلات الأداء.',
+      desc: 'منصة أكاديمية شاملة لإدارة المؤسسات التعليمية مع تتبع الطلاب والأداء.',
+      caseStudy: {
+        problem: 'صعوبة ويدوية متابعة أداء الطلاب والدرجات والجداول الدراسية وتوزيع المحاضرين.',
+        solution: 'إنشاء بوابة مركزية باستخدام Laravel و React لإدارة الصلاحيات وكشف تضارب الجداول تلقائياً.',
+        result: 'توفير أكثر من 50% من الوقت الإداري وتقديم تقارير تحليلية فورية للإدارة الأكاديمية.'
+      },
       tags: ['Laravel', 'React.js', 'MySQL'],
       video: 'https://drive.google.com/file/d/1pwOXSe4P-14pRlxQIaPox9mDRz5LASX1/preview',
-      img: '/assets/projects/academic-platform-thumb.png',
+      img: '/assets/projects/academic-platform-thumb.webp',
       cat: 'webapp',
     },
     {
       name: 'نظام ENgaz',
-      desc: 'نظام CRM متكامل لعمليات البناء يشمل تتبع المشاريع وإدارة العملاء ولوحة التقارير.',
+      desc: 'نظام CRM متكامل لعمليات البناء يشمل تتبع المشاريع والعملاء ولوحة التقارير.',
+      caseStudy: {
+        problem: 'تشتت المهام والمعاملات الورقية وغياب الرؤية الواضحة لنسب إنجاز مشاريع المقاولات.',
+        solution: 'بناء نظام إدارة علاقات عملاء (CRM) مخصص يدعم تدفقات العمل الرقمية والمتابعة المالية للمشاريع.',
+        result: 'تحسين زمن تسليم المشاريع وتوفير واجهة متابعة مالية دقيقة للإدارة العليا في الوقت الفعلي.'
+      },
       tags: ['React.js', 'Laravel', 'MySQL'],
       url: 'https://works.aknanllc.com/',
-      img: '/assets/projects/engaz-crm.png',
+      img: '/assets/projects/engaz-crm.webp',
       cat: 'webapp',
     },
     {
       name: 'نظام متابعة أعمال الموقع الهندسية',
-      desc: 'نظام متقدم لمتابعة وتتبع عمليات المواقع الهندسية وتقارير التقدم وإدارة سير العمل.',
+      desc: 'نظام متقدم لمتابعة وتتبع عمليات المواقع الهندسية وتقارير التقدم.',
+      caseStudy: {
+        problem: 'تأخر التقارير اليومية عن تقدم سير العمل وغياب التتبع المرئي الموثق من المواقع الميدانية.',
+        solution: 'تصميم تطبيق جوال يعتمد على Inertia.js لتمكين المهندسين من إرسال تقارير مصورة ومحددة الموقع الجغرافي.',
+        result: 'تمكين الإدارة من متابعة لحظية لسير العمل وحل المشكلات الفنية عن بعد بشكل أسرع بنسبة 40%.'
+      },
       tags: ['Laravel', 'Inertia.js', 'React.js'],
       video: 'https://drive.google.com/file/d/1iw9hOWd45ZxBMvERn58U8J0Z-1pbJbfS/preview',
-      img: '/assets/projects/site-monitoring-thumb.png',
+      img: '/assets/projects/site-monitoring-thumb.webp',
       cat: 'webapp',
     },
     {
       name: 'أكنان سكوب',
-      desc: 'نظام إدارة مشاريع مؤسسي مع إدارة الشركات والمستندات وتتبع المصروفات والصلاحيات.',
+      desc: 'نظام إدارة مشاريع مؤسسي مع إدارة الشركات والمستندات وتتبع المصروفات.',
+      caseStudy: {
+        problem: 'عدم وجود نظام تدقيق مالي وإداري موحد للمستندات والعمليات والصلاحيات بين الفروع المختلفة للشركة.',
+        solution: 'تطوير منصة مؤسسية متعددة الشركات (Multi-tenant) مع صلاحيات دقيقة ومستويات أمان متقدمة.',
+        result: 'تأمين كافة المعاملات المالية، تتبع التعديلات على المستندات بالكامل، وتوحيد التقارير المالية للشركات.'
+      },
       tags: ['Laravel', 'Inertia.js', 'React.js'],
       url: 'https://aknanllc-scope.com/login',
-      img: '/assets/projects/aknan-scope.png',
+      img: '/assets/projects/aknan-scope.webp',
       cat: 'webapp',
     },
     {
       name: 'متابعة الشركات ونسب الإنجاز',
-      desc: 'نظام مؤسسي لتتبع عمليات الشركات ونسب الإنجاز مع مراقبة التقدم في الوقت الفعلي ولوحات التقارير.',
+      desc: 'نظام مؤسسي لتتبع عمليات الشركات ونسب الإنجاز في الوقت الفعلي.',
+      caseStudy: {
+        problem: 'الأخطاء المتكررة الناتجة عن تتبع نسب الإنجاز للمشاريع الكبرى يدوياً باستخدام جداول البيانات.',
+        solution: 'برمجة محرك ذكي لحساب نسب الإنجاز تلقائياً وتوليد رسوم بيانية توضيحية مع نظام إشعارات ذكي.',
+        result: 'القضاء على أخطاء الحسابات اليدوية بالكامل وتقديم خارطة طريق مرئية واضحة لأصحاب المصلحة.'
+      },
       tags: ['Laravel', 'React.js', 'MySQL'],
       video: 'https://drive.google.com/file/d/1qY11KpLas4AebrGaw15tE5XXPqgm6U36/preview',
-      img: '/assets/projects/company-tracking-thumb.png',
+      img: '/assets/projects/company-tracking-thumb.webp',
       cat: 'webapp',
     },
     {
       name: 'الاستشارات الهندسية',
-      desc: 'منصة حديثة للاستشارات الهندسية تدعم الخدمات الإنشائية والكهربائية والميكانيكية والمعمارية.',
+      desc: 'منصة حديثة للاستشارات الهندسية تدعم الخدمات الإنشائية والمعمارية.',
+      caseStudy: {
+        problem: 'صعوبة طلب عروض الأسعار أو الاستشارات الهندسية الفنية للمشاريع العقارية بالطرق التقليدية.',
+        solution: 'تصميم استبيان رقمي متكامل يتيح للعملاء إدخال تفاصيل ومتطلبات مشاريعهم والحصول على عروض مباشرة.',
+        result: 'زيادة معدل تحويل الطلبات وتسهيل فرز وتسعير طلبات الاستشارات من قبل القسم الهندسي.'
+      },
       tags: ['React.js', 'Vite', 'CSS3'],
       url: 'https://ahmedzamzam55.github.io/engineering-consultation-system/',
-      img: '/assets/projects/engineering-consultation.png',
+      img: '/assets/projects/engineering-consultation.webp',
       cat: 'saas',
     },
   ],
@@ -118,6 +156,7 @@ export const ar = {
     plans: [
       {
         badge: 'أساسية',
+        desc: 'مثالية للشركات الناشئة التي ترغب في صفحة هبوط سريعة واحترافية لعرض خدماتها.',
         amount: 'حسب المتطلبات',
         customPrice: true,
         features: [
@@ -131,6 +170,7 @@ export const ar = {
       },
       {
         badge: 'احترافية',
+        desc: 'ممتازة للشركات النامية التي تحتاج لوحة تحكم مخصصة وتحسين متقدم لمحركات البحث.',
         amount: 'حسب الاتفاق',
         customPrice: true,
         features: [
@@ -145,6 +185,7 @@ export const ar = {
       },
       {
         badge: 'مؤسسية',
+        desc: 'للمؤسسات التي تتطلب برمجيات معقدة، وأنظمة CRM/ERP، وأتمتة مخصصة بالكامل.',
         amount: 'حسب الطلب',
         customPrice: true,
         features: [
@@ -158,6 +199,11 @@ export const ar = {
         ],
       },
     ],
+  },
+  cta: {
+    title: 'هل لديك فكرة مشروع؟',
+    subtitle: 'دعنا نعمل معاً لبناء تطبيق ويب عالي الأداء يدفع عجلة نمو أعمالك.',
+    button: 'تواصل معي الآن',
   },
   testimonials: {
     title: 'آراء العملاء',

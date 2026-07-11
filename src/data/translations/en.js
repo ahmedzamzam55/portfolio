@@ -51,62 +51,100 @@ export const en = {
     website: 'Website',
     webapp: 'Web App',
     saas: 'SaaS',
+    problem: 'Problem',
+    solution: 'Solution',
+    result: 'Result',
   },
   projectList: [
     {
       name: 'AKNAN LLC',
-      desc: 'Professional corporate website for a leading construction & industrial company in Saudi Arabia with bilingual support and modern design.',
+      desc: 'Professional corporate website for a leading construction & industrial company in Saudi Arabia with bilingual support.',
+      caseStudy: {
+        problem: 'Lack of professional, bilingual online brand representation and marketing reach.',
+        solution: 'Developed a high-performance, responsive React web interface with optimized asset loading.',
+        result: 'Achieved 100% online presence, increased search engine visibility and user engagement.'
+      },
       tags: ['React.js', 'Vite', 'CSS3'],
       url: 'https://www.aknanllc.com/',
-      img: '/assets/projects/aknan-llc.png',
+      img: '/assets/projects/aknan-llc.webp',
       cat: 'website',
     },
     {
       name: 'Academic Platform',
-      desc: 'Comprehensive academic management platform for educational institutions with student tracking, course management, and performance analytics.',
+      desc: 'Comprehensive academic management platform for educational institutions with student tracking.',
+      caseStudy: {
+        problem: 'Inflexible, manual handling of student performance records, timetables, and teacher allocations.',
+        solution: 'Created a centralized dashboard using Laravel & React with automated schedule conflicts detection.',
+        result: 'Saved over 50% of scheduling admin time and established instant analytical reporting for school management.'
+      },
       tags: ['Laravel', 'React.js', 'MySQL'],
       video: 'https://drive.google.com/file/d/1pwOXSe4P-14pRlxQIaPox9mDRz5LASX1/preview',
-      img: '/assets/projects/academic-platform-thumb.png',
+      img: '/assets/projects/academic-platform-thumb.webp',
       cat: 'webapp',
     },
     {
       name: 'ENgaz CRM',
-      desc: 'Full-featured CRM system for construction operations including project tracking, client management, and reporting dashboard.',
+      desc: 'Full-featured CRM system for construction operations including project tracking and dashboards.',
+      caseStudy: {
+        problem: 'Scattered paperwork, missed deadlines, and poor visual overview of ongoing construction projects.',
+        solution: 'Built a custom CRM platform with dynamic task workflows, visual milestone progress bars, and document vaults.',
+        result: 'Drastically improved project delivery time and provided management with real-time financial tracking.'
+      },
       tags: ['React.js', 'Laravel', 'MySQL'],
       url: 'https://works.aknanllc.com/',
-      img: '/assets/projects/engaz-crm.png',
+      img: '/assets/projects/engaz-crm.webp',
       cat: 'webapp',
     },
     {
-      name: 'Engineering Site Monitoring System',
-      desc: 'Advanced system for monitoring and tracking engineering site operations, progress reporting, and workflow management.',
+      name: 'Engineering Site Monitoring',
+      desc: 'Advanced system for monitoring and tracking engineering site operations and progress reporting.',
+      caseStudy: {
+        problem: 'Delays in getting daily progress logs and visual site updates from engineers in the field.',
+        solution: 'Designed a mobile-first tracking system using Inertia.js to submit geolocated photo logs and workflow forms.',
+        result: 'Provided management with immediate visibility into site activities, resolving remote issues 40% faster.'
+      },
       tags: ['Laravel', 'Inertia.js', 'React.js'],
       video: 'https://drive.google.com/file/d/1iw9hOWd45ZxBMvERn58U8J0Z-1pbJbfS/preview',
-      img: '/assets/projects/site-monitoring-thumb.png',
+      img: '/assets/projects/site-monitoring-thumb.webp',
       cat: 'webapp',
     },
     {
       name: 'Aknan Scope',
-      desc: 'Enterprise project management system with company management, document handling, expense tracking, user roles, and multi-language support.',
+      desc: 'Enterprise project management system with multi-tenant company management and expense tracking.',
+      caseStudy: {
+        problem: 'Lack of unified auditing for financial activities, files, and staff privileges across subsidiaries.',
+        solution: 'Implemented a multi-tenant corporate platform with granular role-based permissions (RBAC) and strict security.',
+        result: 'Secured all critical transactions, automated document version tracking, and unified business reports.'
+      },
       tags: ['Laravel', 'Inertia.js', 'React.js'],
       url: 'https://aknanllc-scope.com/login',
-      img: '/assets/projects/aknan-scope.png',
+      img: '/assets/projects/aknan-scope.webp',
       cat: 'webapp',
     },
     {
       name: 'Company & Progress Tracking',
-      desc: 'Enterprise system for tracking company operations and completion percentages with real-time progress monitoring and reporting dashboards.',
+      desc: 'Enterprise system for tracking company operations and completion percentages.',
+      caseStudy: {
+        problem: 'Manual spreadsheets causing mistakes and confusion in calculating completion metrics for key tasks.',
+        solution: 'Programmed a smart progress calculating engine with responsive charts and automatic alert notifications.',
+        result: 'Eliminated computation errors and provided stakeholders with a precise, real-time visual progress roadmap.'
+      },
       tags: ['Laravel', 'React.js', 'MySQL'],
       video: 'https://drive.google.com/file/d/1qY11KpLas4AebrGaw15tE5XXPqgm6U36/preview',
-      img: '/assets/projects/company-tracking-thumb.png',
+      img: '/assets/projects/company-tracking-thumb.webp',
       cat: 'webapp',
     },
     {
       name: 'Engineering Consultation',
-      desc: 'Modern platform for engineering consultations supporting structural, electrical, mechanical, and architectural services.',
+      desc: 'Modern platform for engineering consultations supporting structural, electrical, and mechanical services.',
+      caseStudy: {
+        problem: 'High barrier of entry for clients requesting technical quotes and consultation bookings offline.',
+        solution: 'Developed an interactive questionnaire portal allowing users to input project details and receive quick bids.',
+        result: 'Boosted online client conversion rates and streamlined technical department responses.'
+      },
       tags: ['React.js', 'Vite', 'CSS3'],
       url: 'https://ahmedzamzam55.github.io/engineering-consultation-system/',
-      img: '/assets/projects/engineering-consultation.png',
+      img: '/assets/projects/engineering-consultation.webp',
       cat: 'saas',
     },
   ],
@@ -118,6 +156,7 @@ export const en = {
     plans: [
       {
         badge: 'Basic',
+        desc: 'Ideal for startups wanting a quick & professional landing page to showcase services.',
         amount: 'Based on Specs',
         customPrice: true,
         features: [
@@ -131,6 +170,7 @@ export const en = {
       },
       {
         badge: 'Professional',
+        desc: 'Perfect for growing businesses needing an admin portal and SEO optimization.',
         amount: 'Upon Agreement',
         customPrice: true,
         features: [
@@ -145,6 +185,7 @@ export const en = {
       },
       {
         badge: 'Enterprise',
+        desc: 'For organizations requiring complex software, CRM/ERP systems, and custom automation.',
         amount: 'On Demand',
         customPrice: true,
         features: [
@@ -158,6 +199,11 @@ export const en = {
         ],
       },
     ],
+  },
+  cta: {
+    title: 'Have a project in mind?',
+    subtitle: "Let's team up to build a high-performance web application that drives business growth.",
+    button: "Let's Talk",
   },
   testimonials: {
     title: 'What Clients Say',

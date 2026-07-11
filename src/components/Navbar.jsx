@@ -52,7 +52,12 @@ export default function Navbar() {
             <i className={`fas fa-${theme === 'dark' ? 'sun' : 'moon'}`}></i>
           </button>
           <button className="lang-toggle" onClick={toggleLang}>{lang === 'en' ? 'AR' : 'EN'}</button>
-          <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <button 
+            className="nav-hamburger" 
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
+          >
             <i className={`fas fa-${menuOpen ? 'times' : 'bars'}`}></i>
           </button>
         </div>

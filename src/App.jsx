@@ -19,6 +19,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
+import CTA from './components/CTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
@@ -45,6 +46,7 @@ function AppContent() {
         <Projects />
         <Pricing />
         <Testimonials />
+        <CTA />
         <Contact />
       </main>
       <Footer />

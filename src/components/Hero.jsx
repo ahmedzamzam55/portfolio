@@ -5,6 +5,9 @@ function Particles() {
   const canvasRef = useRef(null);
 
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let animId;
@@ -80,7 +83,7 @@ function Particles() {
 }
 
 export default function Hero() {
-  const { t } = useApp();
+  const { t, theme } = useApp();
   const [text, setText] = useState('');
   const [phraseIdx, setPhraseIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
@@ -126,6 +129,13 @@ export default function Hero() {
       <div className="hero-bg-animation"></div>
       <Particles />
       <div className="hero-content">
+        <div className="hero-logo-container">
+          <img 
+            src={theme === 'dark' ? '/logo_dark.png' : '/logo_light.png'} 
+            alt="Ahmed Zamzam Logo" 
+            className="hero-logo-img" 
+          />
+        </div>
         <p className="hero-greeting">{t.hero.greeting}</p>
         <h1 className="hero-name">Ahmed Zamzam</h1>
         <div className="hero-typing"><span className="typing-text">{text}</span><span className="typing-cursor">|</span></div>

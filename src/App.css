@@ -30,6 +30,7 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 .skip-to-content { position:absolute; top:-100px; left:50%; transform:translateX(-50%); background:var(--accent); color:#fff; padding:12px 24px; border-radius:0 0 8px 8px; z-index:10001; font-weight:600; transition:top .3s; }
 .skip-to-content:focus { top:0; }
 
+
 /* ===== LOADER ===== */
 .loader { position:fixed; inset:0; z-index:9999; background:var(--bg-primary); display:flex; align-items:center; justify-content:center; }
 .loader-content { text-align:center; display:flex; flex-direction:column; align-items:center; }
@@ -62,6 +63,12 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 .hero-bg-animation { position:absolute; inset:0; z-index:0; background:radial-gradient(ellipse at 20% 50%,rgba(108,99,255,.15) 0%,transparent 50%),radial-gradient(ellipse at 80% 50%,rgba(0,212,255,.1) 0%,transparent 50%),radial-gradient(ellipse at 50% 100%,rgba(108,99,255,.08) 0%,transparent 40%); animation:heroPulse 8s ease-in-out infinite alternate; }
 @keyframes heroPulse { 0%{opacity:.7;transform:scale(1)} 100%{opacity:1;transform:scale(1.05)} }
 .hero-content { position:relative; z-index:1; }
+.hero-logo-container { margin-bottom:20px; display:flex; justify-content:center; }
+.hero-logo-img { height:90px; width:auto; display:block; filter:drop-shadow(0 0 20px rgba(108, 99, 255, 0.25)); animation:heroLogoFadeIn 1.2s ease-out; }
+@keyframes heroLogoFadeIn {
+  from { opacity:0; transform:scale(0.8) translateY(-10px); }
+  to { opacity:1; transform:scale(1) translateY(0); }
+}
 .hero-greeting { color:var(--accent); font-size:18px; font-weight:500; margin-bottom:12px; letter-spacing:2px; text-transform:uppercase; }
 .hero-name { font-family:var(--font-heading); font-size:clamp(40px,8vw,80px); font-weight:800; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:8px; }
 .hero-typing { font-size:clamp(18px,3vw,28px); color:var(--text); margin-bottom:20px; min-height:40px; }
@@ -127,7 +134,12 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 .project-card:hover .project-overlay { opacity:1; }
 .project-info { padding:24px; }
 .project-info h3 { color:var(--text); font-family:var(--font-heading); margin-bottom:8px; }
-.project-info p { font-size:14px; line-height:1.6; margin-bottom:16px; }
+.project-desc { font-size:14px; line-height:1.6; margin-bottom:12px; color:var(--text2); }
+.project-case-study { border-top:1px dashed var(--border); padding-top:12px; margin-bottom:16px; display:flex; flex-direction:column; gap:8px; }
+.case-study-item { display:flex; flex-direction:column; gap:2px; font-size:13px; }
+.case-study-label { color:var(--accent2); font-weight:700; text-transform:uppercase; font-size:11px; letter-spacing:0.5px; }
+[dir="rtl"] .case-study-label { letter-spacing:0; }
+.case-study-value { color:var(--text2); line-height:1.4; }
 .project-tags { display:flex; flex-wrap:wrap; gap:8px; }
 .project-tags span { padding:4px 12px; font-size:12px; border-radius:50px; background:rgba(0,212,255,.1); color:var(--accent2); border:1px solid rgba(0,212,255,.2); }
 
@@ -161,6 +173,7 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 .price-card.featured:hover { transform:scale(1.05) translateY(-8px); }
 .popular-tag { position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:var(--gradient); color:#fff; padding:4px 20px; border-radius:50px; font-size:12px; font-weight:600; white-space:nowrap; }
 .price-badge { display:inline-block; padding:6px 24px; border-radius:50px; background:rgba(108,99,255,.1); color:var(--accent); font-weight:600; font-size:14px; margin-bottom:20px; }
+.pricing-plan-desc { font-size:13px; color:var(--text2); margin-top:-10px; margin-bottom:20px; line-height:1.5; opacity:0.85; }
 .price-amount { margin-bottom:4px; }
 .currency { font-size:16px; color:var(--text3); vertical-align:super; }
 .amount { font-family:var(--font-heading); font-size:48px; font-weight:800; color:var(--text); }
@@ -244,6 +257,14 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 .toast-error i { color:#ff4d4d; }
 .btn:disabled { opacity:0.6; cursor:not-allowed; pointer-events:none; }
 
+/* ===== CTA BANNER ===== */
+.cta-banner-section { padding:60px 0; background:var(--bg-primary); position:relative; }
+.cta-banner-content { background:linear-gradient(135deg, rgba(108,99,255,0.1), rgba(0,212,255,0.05)); border:1px solid var(--border); border-radius:var(--radius); padding:48px 60px; display:flex; align-items:center; justify-content:space-between; gap:40px; backdrop-filter:blur(10px); }
+.cta-banner-text h2 { font-family:var(--font-heading); font-size:28px; color:var(--text); margin-bottom:8px; font-weight:700; }
+.cta-banner-text p { color:var(--text2); font-size:15px; line-height:1.6; max-width:600px; }
+.cta-banner-action { flex-shrink:0; }
+.btn-cta { box-shadow:0 4px 20px rgba(108,99,255,0.25); font-size:16px; padding:16px 36px; }
+
 /* ===== SCROLL ANIMATIONS ===== */
 .animate-on-scroll { opacity:0; transform:translateY(30px); transition:all .6s cubic-bezier(.4,0,.2,1); }
 .animate-on-scroll.visible { opacity:1; transform:translateY(0); }
@@ -270,6 +291,8 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
   .testimonials-grid { grid-template-columns:1fr; }
   .footer-content { flex-direction:column; text-align:center; }
   .footer-bottom { flex-direction:column; text-align:center; }
+  .cta-banner-content { flex-direction:column; text-align:center; padding:32px 24px; gap:24px; }
+  .cta-banner-text h2 { font-size:24px; }
   .section { padding:70px 0; }
 }
 @media (max-width:480px) {
@@ -284,4 +307,16 @@ ul { list-style:none; } .container { max-width:1200px; margin:0 auto; padding:0 
 @media (max-width:360px) {
   .hero-name { font-size:28px; }
   .btn { padding:12px 24px; font-size:14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
 }

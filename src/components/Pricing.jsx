@@ -13,6 +13,7 @@ export default function Pricing() {
             <div className={`price-card animate-on-scroll${i === 1 ? ' featured' : ''}`} key={i}>
               {i === 1 && <div className="popular-tag">{t.pricing.popular}</div>}
               <div className="price-badge">{plan.badge}</div>
+              {plan.desc && <p className="pricing-plan-desc">{plan.desc}</p>}
               <div className="price-amount">
                 {plan.customPrice ? (
                   <span className="amount custom-text">{plan.amount}</span>

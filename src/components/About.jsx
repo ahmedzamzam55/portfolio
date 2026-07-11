@@ -38,7 +38,7 @@ export default function About() {
       <div className="container">
         <h2 className="section-title">{t.about.title}</h2>
         <div className="about-grid">
-          <div className="about-image animate-on-scroll"><img src="/img/1.png" alt="Ahmed Zamzam" loading="lazy" /></div>
+          <div className="about-image animate-on-scroll"><img src="/img/1.webp" alt="Ahmed Zamzam" loading="lazy" /></div>
           <div className="about-text animate-on-scroll">
             <p>{t.about.desc}</p>
             <div className="about-stats" ref={statsRef}>
