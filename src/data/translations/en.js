@@ -165,7 +165,6 @@ export const en = {
           'Basic SEO Setup',
           'Contact Form',
           '1 Month Support',
-          'Delivery: 1-2 Weeks',
         ],
       },
       {
@@ -180,7 +179,6 @@ export const en = {
           'Multi-language (AR/EN)',
           'Database Integration',
           '3 Months Support',
-          'Delivery: 3-5 Weeks',
         ],
       },
       {
@@ -195,7 +193,6 @@ export const en = {
           'API Development',
           'Cloud Deployment',
           '6 Months Support',
-          'Delivery: 6-12 Weeks',
         ],
       },
     ],
