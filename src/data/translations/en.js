@@ -73,6 +73,19 @@ export const en = {
       cat: 'website',
     },
     {
+      name: 'PFSC',
+      desc: 'Official corporate portal for Premier Professional Services Company in Saudi Arabia providing comprehensive enterprise solutions.',
+      caseStudy: {
+        problem: 'Need for a modern, high-performance web platform to showcase specialized professional and industrial services.',
+        solution: 'Built a responsive, SEO-optimized web interface with interactive service highlights and smooth navigation.',
+        result: 'Established an authoritative digital presence, driving increased client inquiries and market authority.'
+      },
+      tags: ['React.js', 'Vite', 'CSS3'],
+      url: 'https://pfsc-sa.com/',
+      img: '/assets/projects/pfsc.webp',
+      cat: 'website',
+    },
+    {
       name: 'Academic Platform',
       desc: 'Comprehensive academic management platform for educational institutions with student tracking.',
       caseStudy: {
