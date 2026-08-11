@@ -65,6 +65,12 @@ export default function Contact() {
         <h2 className="section-title">{t.contact.title}</h2>
         <div className="contact-grid">
           <div className="contact-info">
+            <div className="contact-response-badge">
+              <i className="fas fa-bolt"></i> {t.contact.responseTime}
+            </div>
+            <div className="contact-location-badge">
+              <i className="fas fa-map-marker-alt"></i> {t.contact.location}
+            </div>
             {/* Email: decoded at runtime from reversed string — invisible to bots */}
             <div className="contact-item">
               <i className="fas fa-envelope"></i>

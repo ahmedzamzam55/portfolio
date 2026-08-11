@@ -109,6 +109,7 @@ export default function Projects() {
                         <i className="fas fa-play"></i>
                       </div>
                     </div>
+                    <span className="project-cat-badge">{categoryLabels[p.cat] || p.cat}</span>
                     <div className="project-overlay" onClick={() => handlePreview(p)}>
                       <button className="btn btn-sm">
                         <i className="fas fa-play-circle"></i> {t.projects.watchVideo}
@@ -118,6 +119,7 @@ export default function Projects() {
                 ) : (
                   <>
                     <img src={p.img} alt={p.name} loading="lazy" />
+                    <span className="project-cat-badge">{categoryLabels[p.cat] || p.cat}</span>
                     <div className="project-overlay">
                       <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn btn-sm"><i className="fas fa-external-link-alt"></i> {t.projects.liveDemo}</a>
                     </div>

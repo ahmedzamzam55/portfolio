@@ -5,11 +5,34 @@ export default function Navbar() {
   const { t, theme, lang, toggleTheme, toggleLang } = useApp();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('#hero');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // Active section tracking
+  useEffect(() => {
+    const sectionIds = ['hero', 'about', 'skills', 'projects', 'pricing', 'testimonials', 'contact'];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(`#${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.3, rootMargin: '-70px 0px 0px 0px' }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const links = [
@@ -44,7 +67,15 @@ export default function Navbar() {
         </a>
         <ul className={`nav-links${menuOpen ? ' active' : ''}`}>
           {links.map(l => (
-            <li key={l.href}><a href={l.href} onClick={(e) => handleScroll(e, l.href)}>{l.label}</a></li>
+            <li key={l.href}>
+              <a 
+                href={l.href} 
+                onClick={(e) => handleScroll(e, l.href)}
+                className={activeSection === l.href ? 'section-active' : ''}
+              >
+                {l.label}
+              </a>
+            </li>
           ))}
         </ul>
         <div className="nav-actions">

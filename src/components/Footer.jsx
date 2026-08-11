@@ -15,6 +15,7 @@ export default function Footer() {
               />
             </a>
             <p>{t.footer.role}</p>
+            <p className="footer-tagline">{t.footer.tagline}</p>
           </div>
           <div className="footer-links">
             <a href="#about">{t.nav.about}</a>

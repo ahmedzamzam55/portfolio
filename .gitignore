@@ -44,3 +44,7 @@ Desktop.ini
 .testsprite
 
 .vercel
+
+# Backups
+public/img/*_original.*
+

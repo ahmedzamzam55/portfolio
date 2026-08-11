@@ -136,6 +136,10 @@ export default function Hero() {
             className="hero-logo-img" 
           />
         </div>
+        <div className="hero-available">
+          <span className="pulse-dot"></span>
+          {t.hero.availableBadge}
+        </div>
         <p className="hero-greeting">{t.hero.greeting}</p>
         <h1 className="hero-name">Ahmed Zamzam</h1>
         <div className="hero-typing"><span className="typing-text">{text}</span><span className="typing-cursor">|</span></div>

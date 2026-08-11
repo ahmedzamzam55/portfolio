@@ -16,8 +16,15 @@ export default function Skills() {
         <h2 className="section-title">{t.skills.title}</h2>
         <div className="skills-grid">
           {skillsData.map((s, i) => (
-            <div className="skill-card animate-on-scroll" key={i}>
-              <h3><i className={`fas ${s.icon}`}></i> {t.skills[s.key]}</h3>
+            <div 
+              className="skill-card animate-on-scroll" 
+              key={i}
+              style={{ borderTopColor: s.color }}
+            >
+              <div className="skill-card-header">
+                <h3><i className={`fas ${s.icon}`} style={{ color: s.color }}></i> {t.skills[s.key]}</h3>
+                <span className="skill-count">{s.tags.length} tech</span>
+              </div>
               <div className="skill-tags">{s.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
             </div>
           ))}

@@ -17,12 +17,20 @@ export default function CTA() {
       <div className="container">
         <div className="cta-banner-content animate-on-scroll">
           <div className="cta-banner-text">
-            <h2>{t.cta.title}</h2>
+            <h2><i className="fas fa-rocket"></i> {t.cta.title}</h2>
             <p>{t.cta.subtitle}</p>
           </div>
           <div className="cta-banner-action">
             <a href="#contact" onClick={handleScroll} className="btn btn-primary btn-cta">
               <i className="fas fa-comments"></i> {t.cta.button}
+            </a>
+            <a 
+              href="https://wa.me/966532971052" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="cta-whatsapp-alt"
+            >
+              <i className="fab fa-whatsapp"></i> {t.cta.whatsappAlt}
             </a>
           </div>
         </div>

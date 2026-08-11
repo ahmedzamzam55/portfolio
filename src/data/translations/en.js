@@ -20,6 +20,7 @@ export const en = {
     desc: 'I build modern, scalable web applications that help businesses grow.',
     viewWork: 'View My Work',
     contactMe: 'Contact Me',
+    availableBadge: 'Available for hire',
   },
   typing: [
     'Building Web Applications',
@@ -34,6 +35,8 @@ export const en = {
     years: 'Years Exp.',
     tech: 'Technologies',
     satisfaction: 'Satisfaction',
+    viewProjects: 'View Projects',
+    letsTalk: "Let's Talk",
   },
   skills: {
     title: 'Skills & Technologies',
@@ -201,6 +204,7 @@ export const en = {
     title: 'Have a project in mind?',
     subtitle: "Let's team up to build a high-performance web application that drives business growth.",
     button: "Let's Talk",
+    whatsappAlt: 'Or WhatsApp me directly',
   },
   testimonials: {
     title: 'What Clients Say',
@@ -241,9 +245,12 @@ export const en = {
     messagePh: 'Your Message',
     send: 'Send Message',
     sending: 'Sending...',
+    responseTime: 'Usually responds within 2 hours',
+    location: 'Saudi Arabia',
   },
   footer: {
     role: 'Full Stack Developer',
+    tagline: 'Crafting digital experiences from Saudi Arabia 🇸🇦',
     rights: 'All rights reserved.',
     builtWith: 'Built by Ahmed Zamzam',
   },
