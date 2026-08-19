@@ -117,18 +117,32 @@ export default function Projects() {
                     </div>
                   </>
                 ) : (
-                  <>
+                  <a 
+                    href={p.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="project-img-link"
+                    aria-label={`${t.projects.liveDemo} - ${p.name}`}
+                  >
                     <img src={p.img} alt={p.name} loading="lazy" />
                     <span className="project-cat-badge">{categoryLabels[p.cat] || p.cat}</span>
                     <div className="project-overlay">
-                      <a href={p.url} target="_blank" rel="noopener noreferrer" className="btn btn-sm"><i className="fas fa-external-link-alt"></i> {t.projects.liveDemo}</a>
+                      <span className="btn btn-sm"><i className="fas fa-external-link-alt"></i> {t.projects.liveDemo}</span>
                     </div>
-                  </>
+                  </a>
                 )}
               </div>
 
               <div className="project-info">
-                <h3>{p.name}</h3>
+                <h3>
+                  {p.url ? (
+                    <a href={p.url} target="_blank" rel="noopener noreferrer" className="project-title-link">
+                      {p.name}
+                    </a>
+                  ) : (
+                    p.name
+                  )}
+                </h3>
                 <p className="project-desc">{p.desc}</p>
                 {p.caseStudy && (
                   <div className="project-case-study">

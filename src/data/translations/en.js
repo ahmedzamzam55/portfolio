@@ -86,6 +86,19 @@ export const en = {
       cat: 'website',
     },
     {
+      name: 'Abdulrahman Al-Oudah Law Firm',
+      desc: 'Comprehensive corporate website and legal portal for a premier law practice in Saudi Arabia, featuring consultations, litigation, and documentation services.',
+      caseStudy: {
+        problem: 'Law practices requiring an authoritative digital presence that conveys trust, confidentiality, and seamless consultation booking.',
+        solution: 'Engineered a high-performance, elegant legal portal with bespoke typography, responsive layouts, and intuitive service navigation.',
+        result: 'Elevated brand credibility, streamlined client intake, and substantially increased digital consultation inquiries.'
+      },
+      tags: ['React.js', 'Vite', 'CSS3'],
+      url: 'https://abdulrahmanone.wuaze.com/',
+      img: '/assets/projects/al-oudah-law.webp',
+      cat: 'website',
+    },
+    {
       name: 'Academic Platform',
       desc: 'Comprehensive academic management platform for educational institutions with student tracking.',
       caseStudy: {
